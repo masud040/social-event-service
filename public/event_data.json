@@ -2,7 +2,7 @@
   {
     "id": 1,
     "event_name": "Weddings",
-    "image": "wedding.jpg",
+    "image": "https://i.ibb.co/5xhwjmh/wedding.jpg",
     "description": "At our event management service, we pride ourselves on curating exquisite and unforgettable wedding experiences. Weddings are a celebration of love, and we are committed to making your special day truly magical. Our dedicated team of professionals works tirelessly to ensure every aspect of your wedding is executed flawlessly.From the moment you engage our services, we collaborate closely with you to understand your vision and preferences. We assist you in selecting the perfect venue, designing stunning floral arrangements, and crafting a culinary experience that will leave a lasting impression on your guests. But it's not just about the logistics. We understand that weddings are a deeply personal and emotional journey. Our team is there to support you every step of the way, providing guidance, reassurance, and creativity.Your wedding day should be a reflection of your love story, and we are here to make it a reality. Whether you dream of a grand ballroom affair or an intimate garden ceremony, we bring your vision to life. From the exchange of vows to the final dance, every moment is thoughtfully curated to create memories that last a lifetime.With an average rating of 4.8, our clients consistently praise us for turning their dreams into reality. Trust us to transform your wedding into an extraordinary celebration of your love story. Our pricing is tailored to your specific needs and desires, typically ranging from $10,000 to $25,000, ensuring that you receive exceptional value and service for your investment.",
     "rating": 4.8,
     "price": "$2000"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "event_name": "Birthday Parties",
-    "image": "birthday.jpg",
+    "image": "https://i.ibb.co/5Thw2DZ/sweet-festive-buffet-fruit-caps-macaroni-lots-sweets-2.jpg",
     "description": "For birthday parties that are truly exceptional, look no further than our event management service. We specialize in creating unique and memorable celebrations for individuals of all ages. Birthdays mark milestones in our lives, and we believe that each one should be celebrated in style.Our team of dedicated professionals will collaborate with you to bring your birthday vision to life. Whether it's a whimsical children's party, a milestone birthday bash, or a themed extravaganza, we have the creativity and expertise to make it happen. From imaginative decorations to engaging entertainment and mouthwatering cakes, every detail is tailored to your preferences.But it's not just about the aesthetics; it's about creating lasting memories. We understand the importance of celebrating with loved ones, and we ensure that every guest has a memorable experience.With an average rating of 4.5, our clients consistently praise us for turning their birthday fantasies into reality. Trust us to make your next birthday party an extraordinary and joy-filled occasion that you and your guests will cherish forever. Our pricing is flexible, typically ranging from $500 to $5,000, ensuring that you can create the perfect party within your budget.",
     "rating": 4.5,
     "price": "$1600"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "event_name": "Anniversaries",
-    "image": "anniversary.jpg",
+    "image": "https://i.ibb.co/bvWb9fB/sweet-festive-buffet-fruit-caps-macaroni-lots-sweets-1.jpg",
     "description": "Anniversaries are a celebration of enduring love and commitment, and our event management service specializes in creating romantic and unforgettable anniversary events. We understand the significance of these milestones in your journey together, and we are dedicated to making them extraordinary.Our team of experienced professionals will work closely with you to plan and execute an anniversary event that reflects your unique love story. Whether it's a private and intimate dinner for two or a grand soirée with friends and family, we ensure that every element is harmoniously synchronized to create an atmosphere of love and appreciation.We go beyond the basics to make your anniversary truly exceptional. From selecting enchanting venues to crafting personalized experiences and surprises, we aim to exceed your expectations.With an average rating of 4.9, our clients consistently praise us for our ability to capture the essence of their love and create moments that will be cherished forever. Trust us to make your anniversary a romantic and memorable celebration of your enduring journey together. Our pricing is tailored to your preferences, typically ranging from $2,000 to $10,000, ensuring that you receive exceptional value and service for your investment.",
     "rating": 4.9,
     "price": "$14000"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "event_name": "Engagement Parties",
-    "image": "engagement.jpg",
+    "image": "https://i.ibb.co/f0BTzZS/angejement.jpg",
     "description": "Your engagement is a beautiful milestone on the journey of love, and our event management service is dedicated to making it a magical and unforgettable experience. We understand that this moment is a significant chapter in your love story, and we are here to ensure it is celebrated in style.Our team of skilled professionals specializes in engagement party planning. We work closely with you to create an event that reflects your unique style and love story. Whether it's an intimate gathering or a glamorous affair, we design and coordinate every aspect to perfection.From selecting breathtaking venues to crafting exquisite décor, entertainment, and surprises, we aim to create a setting where your love shines brilliantly.With an average rating of 4.7, our clients consistently commend us for our ability to turn their engagement dreams into reality. Trust us to set the stage for this special chapter in your life, where your love story takes center stage. Our pricing is flexible, typically ranging from $1,500 to $7,000, ensuring that you can celebrate this moment within your budget.",
     "rating": 4.7,
     "price": "$1200"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "event_name": "Retirement Parties",
-    "image": "retirement.jpg",
+    "image": "https://i.ibb.co/SmXLbDg/retirement1.jpg",
     "description": "Retirement is a significant life transition, and our event management service specializes in creating meaningful and memorable retirement parties that honor the retiree's accomplishments and embrace their new beginnings. We understand the importance of this milestone, and we are committed to making it a heartfelt and joyful celebration.Our team of dedicated professionals will work with you to plan and execute a retirement party that reflects the retiree's personality and aspirations. Whether it's a gathering of colleagues, friends, or family, we create events that pay tribute to their career while looking forward to the future.From selecting the perfect venue to creating personalized mementos and heartfelt speeches, our team ensures that the retirement party is a fitting send-off and a warm welcome to the next adventure.With an average rating of 4.6, our clients consistently praise us for our ability to create retirement parties filled with love and appreciation. Trust us to make this transition a joyful and memorable experience for the retiree and their loved ones. Our pricing is flexible, typically ranging from $1,000 to $5,000, ensuring that you can celebrate this milestone within your budget.",
     "rating": 4.6,
     "price": "$1000"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "event_name": "Baby Shower",
-    "image": "baby_shower.jpg",
+    "image": "https://i.ibb.co/cCh11hQ/sweet-festive-buffet-fruit-caps-macaroni-lots-sweets-3.jpg",
     "description": "Welcome the newest member of your family with a baby shower that is as special as the bundle of joy on the way. Our event management service specializes in crafting charming and heartwarming baby showers that celebrate the anticipation and excitement of parenthood.We believe that this moment should be filled with joy, love, and cherished memories. Our team of dedicated professionals will work closely with you to plan and execute a baby shower that reflects your style and preferences. Whether it's a traditional celebration or a modern twist, we ensure that every detail is thoughtfully arranged. From selecting cozy venues to creating adorable décor, organizing fun activities, and preparing delectable treats, we aim to create an atmosphere of love and happiness.With an average rating of 4.8, our clients consistently commend us for making their baby showers truly memorable. Trust us to create cherished memories as you prepare to welcome the newest member of your family into a world filled with love and happiness. Our pricing is flexible, typically ranging from $800 to $3,500, ensuring that you can celebrate this joyous occasion within your budget.",
     "rating": 4.8,
     "price": "$800"
