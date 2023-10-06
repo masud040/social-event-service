@@ -67,7 +67,10 @@ const Navbar = () => {
     </>
   );
   return (
-    <nav className="mx-auto block w-full max-w-screen-xl rounded-xl border border-white/80 bg-white bg-opacity-80 py-2 px-4 text-white shadow-md backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4 ">
+    <nav
+      className="mx-auto block w-full  
+ bg-opacity-80 py-2 px-4  backdrop-blur-2xl backdrop-saturate-200  lg:py-4 "
+    >
       <Toaster />
       <div>
         <div className="container mx-auto flex items-center justify-between text-gray-900">
