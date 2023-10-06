@@ -20,13 +20,17 @@ const Banner = () => {
     <div>
       <Swiper
         className="mySwiper"
-        speed={3000}
+        speed={4000}
         modules={[Autoplay, Pagination, Navigation]}
-        autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 2500 }}
       >
         {images?.map((img, index) => (
           <SwiperSlide key={index}>
-            <img src={img} className="w-full h-[90vh]" alt="" />
+            <img
+              src={img}
+              className="w-full h-[30vh] md:h-[60vh] lg:h-[90vh]"
+              alt=""
+            />
           </SwiperSlide>
         ))}
       </Swiper>
