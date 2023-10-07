@@ -47,12 +47,20 @@ const route = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: (
+          <PrivateRoute>
+            <About />
+          </PrivateRoute>
+        ),
         loader: () => fetch("../team.json"),
       },
       {
         path: "/blog",
-        element: <Blog />,
+        element: (
+          <PrivateRoute>
+            <Blog />
+          </PrivateRoute>
+        ),
       },
     ],
   },

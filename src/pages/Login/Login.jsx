@@ -1,12 +1,7 @@
 import { useContext, useState } from "react";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { FaGithub, FaGoogle } from "react-icons/fa";
-import {
-  Link,
-  useLocation,
-  useNavigate,
-  useNavigation,
-} from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import toast, { Toaster } from "react-hot-toast";
@@ -17,7 +12,7 @@ const Login = () => {
   const [show, setShow] = useState(false);
   const { state } = useLocation();
   const navigate = useNavigate();
-  console.log(navigate);
+
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e?.target);

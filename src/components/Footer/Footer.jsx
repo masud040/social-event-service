@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
-    <div className="flex justify-around p-10 bg-[#242931]  text-white px-8">
-      <nav className="flex flex-col">
+    <div className="flex justify-around p-10 bg-[#242931]  text-gray-300 px-8">
+      <nav className="flex flex-col ">
         <header className="footer-title text-base">Services</header>
-        <a className="link link-hover">Wedding</a>
+        <a className="link link-hover ">Wedding</a>
         <a className="link link-hover">Anniversaries</a>
         <a className="link link-hover">Birthday</a>
         <a className="link link-hover">Engagement</a>

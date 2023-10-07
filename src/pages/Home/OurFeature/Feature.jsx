@@ -1,11 +1,14 @@
 const Feature = () => {
   return (
     <div className="my-8">
-      <h1 className="uppercase text-2xl text-center font-semibold  bg-gradient-to-r from-violet-600 via-pink-500 to-indigo-400 text-transparent bg-clip-text my-6 ">
+      <h1
+        data-aos="zoom-out-left"
+        className="uppercase text-2xl text-center font-semibold  bg-gradient-to-r from-violet-600 via-pink-500 to-indigo-400 text-transparent bg-clip-text my-6 "
+      >
         Why Choose to book Event services with{" "}
         <span className="text-green-700">us?</span>
       </h1>
-      <div className="text-gray-600">
+      <div data-aos="zoom-out-up" className="text-gray-600">
         <p>
           Clients should choose Our services for their event needs because we
           offer a comprehensive array of benefits that set us apart from the

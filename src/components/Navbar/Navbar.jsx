@@ -31,21 +31,6 @@ const Navbar = () => {
         </NavLink>
       </li>
 
-      <li className="p-1  ">
-        <NavLink
-          to="/blog"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? ""
-              : isActive
-              ? "flex items-center text-gray-700 font-semibold transition-all bg-rose-300 rounded-md px-2 py-1 "
-              : ""
-          }
-        >
-          Blog
-        </NavLink>
-      </li>
-
       <li className="p-1">
         <NavLink
           to="/about"
@@ -74,6 +59,20 @@ const Navbar = () => {
           Contact Us
         </NavLink>
       </li>
+      <li className="p-1  ">
+        <NavLink
+          to="/blog"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? ""
+              : isActive
+              ? "flex items-center text-gray-700 font-semibold transition-all bg-rose-300 rounded-md px-2 py-1 "
+              : ""
+          }
+        >
+          Blog
+        </NavLink>
+      </li>
     </>
   );
   return (
@@ -87,12 +86,12 @@ const Navbar = () => {
           <button className="relative ml-auto h-6 max-h-[40px] max-w-[40px] rounded-lg text-center font-sans text-xs font-medium uppercase text-blue-gray-500 transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none none md:hidden">
             <span
               onClick={() => setShow(!show)}
-              className="absolute top-1/2 right-[240px] -translate-y-1/2 -translate-x-1/2 transform text-2xl"
+              className="absolute top-1/2 right-[290px] -translate-y-1/2 -translate-x-1/2 transform text-2xl"
             >
               {show ? <AiOutlineClose /> : <AiOutlineMenu />}
             </span>
           </button>
-          <ul className="hidden items-center gap-6 md:flex  ">{navLinks}</ul>
+          <ul className="hidden items-center gap-6 md:flex">{navLinks}</ul>
           {user ? (
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -102,7 +101,7 @@ const Navbar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="mt-2 z-[1] p-1  dropdown-content menu bg-gray-100 "
+                className="mt-2 z-[1] p-1  dropdown-content menu rounded-md bg-gray-100 "
               >
                 <li>
                   <Link>{user?.displayName}</Link>
@@ -113,13 +112,18 @@ const Navbar = () => {
               </ul>
             </div>
           ) : (
-            <Link
-              className="middle none center  rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
-              type="button"
-              to={"/login"}
+            <NavLink
+              to="/login"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? ""
+                  : isActive
+                  ? "flex transition-all items-center text-gray-700 font-semibold bg-rose-300 rounded-md px-2 py-1"
+                  : ""
+              }
             >
-              <button>Login</button>
-            </Link>
+              Login
+            </NavLink>
           )}
         </div>
         <div
@@ -130,11 +134,11 @@ const Navbar = () => {
           }
         >
           <div className="container   mx-auto">
-            <ul className=" mb-2 flex flex-col gap-1">{navLinks}</ul>
+            <ul className=" mb-2 flex flex-col md:hidden gap-1">{navLinks}</ul>
 
             <Link to={"/login"}>
               <button
-                className="middle none center mb-2 block w-full rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                className="middle none center mb-2 block w-full rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 md:hidden disabled:shadow-none"
                 type="button"
               >
                 Login

@@ -1,9 +1,18 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 const ServiceCard = ({ service }) => {
   const { short_details, id, event_name, image, price } = service || {};
   return (
-    <div className=" mb-5 mx-auto rounded-md bg-gradient-to-r from-fuchsia-500 via-red-500 to-indigo-500 p-[2px] hover:scale-105 delay-100 transition-all">
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      className=" mb-5 mx-auto rounded-md bg-gradient-to-r from-fuchsia-500 via-red-500 to-indigo-500 p-[2px] hover:scale-105 delay-100 transition-all"
+    >
       <div className="h-full w-full items-center justify-center rounded-md  bg-gray-200 back flex flex-col p-3 lg:w-96">
         <img src={image} className="mx-auto w-96 h-56 rounded-md" alt="" />
 

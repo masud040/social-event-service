@@ -1,5 +1,5 @@
 const Blog = () => {
-  return <div></div>;
+  return <div className="h-screen"></div>;
 };
 
 export default Blog;
