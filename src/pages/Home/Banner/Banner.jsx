@@ -19,7 +19,7 @@ const Banner = () => {
   return (
     <div className="relative z-[-1]">
       <Swiper
-        className="mySwiper"
+        className="mySwiper "
         speed={4000}
         modules={[Autoplay, Pagination, Navigation]}
         autoplay={{ delay: 2500 }}
@@ -28,7 +28,7 @@ const Banner = () => {
           <SwiperSlide key={index}>
             <img
               src={img}
-              className="w-full h-[30vh] md:h-[60vh] lg:h-[90vh]"
+              className="w-full h-[30vh] md:h-[60vh] lg:h-[90vh] rounded-lg"
               alt=""
             />
           </SwiperSlide>

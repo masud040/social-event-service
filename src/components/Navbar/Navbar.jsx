@@ -16,58 +16,62 @@ const Navbar = () => {
   };
   const navLinks = (
     <>
-      <li className="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
+      <li className="p-1">
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
             isPending
-              ? "flex items-center"
+              ? ""
               : isActive
-              ? "flex items-center text-green-500"
+              ? "flex items-center text-gray-700 font-semibold transition-all  bg-rose-300 rounded-md px-2 py-1 "
               : ""
           }
         >
           Home
         </NavLink>
       </li>
-      <li className="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
+
+      <li className="p-1  ">
         <NavLink
-          to="/products"
+          to="/blog"
           className={({ isActive, isPending }) =>
             isPending
-              ? "flex items-center"
+              ? ""
               : isActive
-              ? "flex items-center text-green-500"
+              ? "flex items-center text-gray-700 font-semibold transition-all bg-rose-300 rounded-md px-2 py-1 "
+              : ""
+          }
+        >
+          Blog
+        </NavLink>
+      </li>
+
+      <li className="p-1">
+        <NavLink
+          to="/about"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? ""
+              : isActive
+              ? "flex transition-all items-center text-gray-700 font-semibold bg-rose-300 rounded-md px-2 py-1"
               : ""
           }
         >
           About
         </NavLink>
       </li>
-      <li className="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
+      <li className="p-1">
         <NavLink
-          to="/about"
+          to="/contact"
           className={({ isActive, isPending }) =>
             isPending
-              ? "flex items-center"
+              ? ""
               : isActive
-              ? "flex items-center text-green-500"
-              : ""
-          }
-        ></NavLink>
-      </li>
-      <li className="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
-        <NavLink
-          to="/eventDetails"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "flex items-center"
-              : isActive
-              ? "flex items-center text-green-500"
+              ? "flex transition-all items-center bg-rose-300 rounded-md px-2 py-1 text-gray-700 font-semibold"
               : ""
           }
         >
-          Service Details
+          Contact Us
         </NavLink>
       </li>
     </>
@@ -88,7 +92,7 @@ const Navbar = () => {
               {show ? <AiOutlineClose /> : <AiOutlineMenu />}
             </span>
           </button>
-          <ul className="hidden items-center gap-6 md:flex">{navLinks}</ul>
+          <ul className="hidden items-center gap-6 md:flex  ">{navLinks}</ul>
           {user ? (
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -125,7 +129,7 @@ const Navbar = () => {
               : "block w-full h-0 basis-full overflow-hidden text-gray-900 transition-all duration-300 ease-in lg:hidden"
           }
         >
-          <div className="container  mx-auto">
+          <div className="container   mx-auto">
             <ul className=" mb-2 flex flex-col gap-1">{navLinks}</ul>
 
             <Link to={"/login"}>

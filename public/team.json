@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "image": "https://i0.wp.com/bookextraordinary.com/wp-content/uploads/2023/03/Andrw_3.png?w=498&ssl=1",
+    "position": "Event Manager"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "image": "https://i0.wp.com/bookextraordinary.com/wp-content/uploads/2023/03/Michael-Winters.png?w=498&ssl=1",
+    "position": "Marketing Coordinator"
+  },
+  {
+    "id": 3,
+    "name": "Mike Johnson",
+    "image": "https://i0.wp.com/bookextraordinary.com/wp-content/uploads/2023/03/Jeff-Lang.png?w=498&ssl=1",
+    "position": "Logistics Coordinator"
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "image": "https://i0.wp.com/bookextraordinary.com/wp-content/uploads/2023/03/Q_1.png?w=498&ssl=1",
+    "position": "Social Media Specialist"
+  }
+]

@@ -1,7 +1,12 @@
 import { useContext, useState } from "react";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { FaGithub, FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import {
+  Link,
+  useLocation,
+  useNavigate,
+  useNavigation,
+} from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import toast, { Toaster } from "react-hot-toast";
@@ -10,6 +15,9 @@ const githubProvider = new GithubAuthProvider();
 const Login = () => {
   const { login, loginWithSocial } = useContext(AuthContext);
   const [show, setShow] = useState(false);
+  const { state } = useLocation();
+  const navigate = useNavigate();
+  console.log(navigate);
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e?.target);
@@ -20,12 +28,24 @@ const Login = () => {
       .then(() => {
         toast.success("Login Success");
         e.target.reset();
+        if (state) {
+          navigate(state);
+        } else {
+          navigate("/");
+        }
       })
       .catch((err) => toast.error(err.message));
   };
   const loginWithSocials = (provider) => {
     loginWithSocial(provider)
-      .then(() => toast.success("login success"))
+      .then(() => {
+        toast.success("login success");
+        if (state) {
+          navigate(state);
+        } else {
+          navigate("/");
+        }
+      })
       .catch((err) => toast.error(err.message));
   };
   return (

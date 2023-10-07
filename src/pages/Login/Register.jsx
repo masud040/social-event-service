@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { FaGoogle, FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
 import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
@@ -10,6 +10,7 @@ const githubProvider = new GithubAuthProvider();
 const Register = () => {
   const { register, loginWithSocial, setName } = useContext(AuthContext);
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e?.target);
@@ -26,7 +27,10 @@ const Register = () => {
     register(email, password)
       .then(() => {
         setName(name, photo)
-          .then(() => toast.success("Register Success!"))
+          .then(() => {
+            toast.success("Register Success!");
+            navigate("/login");
+          })
           .catch((err) => toast.error(err.message));
         e.target.reset();
       })
