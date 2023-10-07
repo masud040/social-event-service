@@ -4,7 +4,8 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Toaster } from "react-hot-toast";
 import { useState } from "react";
 const Navbar = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
+  const user = false;
 
   const navLinks = (
     <>
@@ -33,7 +34,7 @@ const Navbar = () => {
               : ""
           }
         >
-          Events
+          About
         </NavLink>
       </li>
       <li className="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
@@ -46,9 +47,7 @@ const Navbar = () => {
               ? "flex items-center text-green-500"
               : ""
           }
-        >
-          Services
-        </NavLink>
+        ></NavLink>
       </li>
       <li className="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
         <NavLink
@@ -61,7 +60,7 @@ const Navbar = () => {
               : ""
           }
         >
-          Details
+          Service Details
         </NavLink>
       </li>
     </>
@@ -83,22 +82,34 @@ const Navbar = () => {
             </span>
           </button>
           <ul className="hidden items-center gap-6 md:flex">{navLinks}</ul>
-
-          <div className="dropdown dropdown-end">
-            <label
-              tabIndex={0}
-              className="btn btn-ghost btn-circle avatar"
-            ></label>
-          </div>
-
-          <button
-            className="middle none center  rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
-            type="button"
-          >
-            <Link to={"/login"}>
+          {user ? (
+            <div className="dropdown">
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <img src="" />
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="mt-2 z-[1] p-2 shadow menu dropdown-content rounded-box bg-gray-100 menu-sm "
+              >
+                <li>
+                  <Link>Profile</Link>
+                </li>
+                <li>
+                  <Link>Logout</Link>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <Link
+              className="middle none center  rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+              type="button"
+              to={"/login"}
+            >
               <button>Login</button>
             </Link>
-          </button>
+          )}
         </div>
         <div
           className={

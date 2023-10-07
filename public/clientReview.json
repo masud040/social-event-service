@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "event_type": "Wedding",
+    "client_name": "Sarah and Martinez",
+    "testimonial": "Our wedding was a dream come true, thanks to the incredible team at Social Events Management. Every detail was meticulously planned, and the day went off without a hitch.",
+    "rating": 5,
+    "image_url": "https://i.ibb.co/gD0WMjk/client5.png"
+  },
+  {
+    "id": 2,
+    "event_type": "Anniversary",
+    "client_name": "Emily and Johnson",
+    "testimonial": "Celebrating our 10th anniversary was made extra special by Social Events Management. They created a beautiful and romantic evening that left us and our guests in awe.",
+    "rating": 4.5,
+    "image_url": "https://i.ibb.co/hc0Jgmx/client1.png"
+  },
+  {
+    "id": 3,
+    "event_type": "Birthday",
+    "client_name": "Michael",
+    "testimonial": "My surprise 50th birthday party was a huge success, all thanks to Social Events Management. They managed to keep it a secret and turned it into a night filled with laughter and joy.",
+    "rating": 4.2,
+    "image_url": "https://i.ibb.co/7NTGwK8/client2.png"
+  },
+  {
+    "id": 4,
+    "event_type": "Retirement",
+    "client_name": "John",
+    "testimonial": "Retiring after 30 years of work was emotional, but Social Events Management helped me celebrate this milestone in style. The retirement party was a blast, and I'll remember it forever.",
+    "rating": 4.8,
+    "image_url": "https://i.ibb.co/6wVCQVX/client3.png"
+  },
+  {
+    "id": 5,
+    "event_type": "Engagement",
+    "client_name": "Rachel and James",
+    "testimonial": "We got engaged in the most beautiful way possible, thanks to Social Events Management. The setting was perfect, and the moment was captured beautifully.",
+    "rating": 4.6,
+    "image_url": "https://i.ibb.co/mqLVXkY/client4-1.png"
+  },
+  {
+    "id": 6,
+    "event_type": "Wedding",
+    "client_name": "Linda and Paul",
+    "testimonial": "Having our wedding planned by Social Events Management was the best decision we made. It was a magical day, and we're grateful for their dedication and creativity.",
+    "rating": 5,
+    "image_url": "https://i.ibb.co/WgbCnbV/client6.png"
+  }
+]

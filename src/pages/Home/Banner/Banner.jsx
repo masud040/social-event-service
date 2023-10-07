@@ -17,7 +17,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div>
+    <div className="relative z-[-1]">
       <Swiper
         className="mySwiper"
         speed={4000}

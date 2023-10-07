@@ -1,5 +1,6 @@
 import Banner from "./Banner/Banner";
-import Communicate from "./Comunicate/Communicate";
+import ClientReview from "./ClientReview/ClientReview";
+
 import Feature from "./OurFeature/Feature";
 import Services from "./Services/Services";
 
@@ -10,7 +11,7 @@ const Home = () => {
         <Banner />
         <Services />
         <Feature />
-        <Communicate />
+        <ClientReview />
       </div>
     </>
   );
