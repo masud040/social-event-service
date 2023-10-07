@@ -1,12 +1,19 @@
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-import { Toaster } from "react-hot-toast";
-import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+
 const Navbar = () => {
   const [show, setShow] = useState(false);
-  const user = false;
+  const { user, logout } = useContext(AuthContext);
 
+  const handleLogout = () => {
+    logout()
+      .then(() => toast.success("Log out successfully"))
+      .catch((err) => toast.error(err.message));
+  };
   const navLinks = (
     <>
       <li className="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
@@ -51,7 +58,7 @@ const Navbar = () => {
       </li>
       <li className="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
         <NavLink
-          to="/contact"
+          to="/eventDetails"
           className={({ isActive, isPending }) =>
             isPending
               ? "flex items-center"
@@ -67,11 +74,11 @@ const Navbar = () => {
   );
   return (
     <div
-      className="mx-auto   w-full  
-  py-2  -transparent lg:py-4 "
+      className="mx-auto  w-full  
+  py-2 mb-2 shadow-md"
     >
       <Toaster />
-      <div>
+      <div className="w-[90%] mx-auto">
         <div className="container mx-auto flex items-center justify-between text-gray-900">
           <button className="relative ml-auto h-6 max-h-[40px] max-w-[40px] rounded-lg text-center font-sans text-xs font-medium uppercase text-blue-gray-500 transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none none md:hidden">
             <span
@@ -86,18 +93,18 @@ const Navbar = () => {
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
-                  <img src="" />
+                  <img src={user?.photoURL} />
                 </div>
               </label>
               <ul
                 tabIndex={0}
-                className="mt-2 z-[1] p-2 shadow menu dropdown-content rounded-box bg-gray-100 menu-sm "
+                className="mt-2 z-[1] p-1  dropdown-content menu bg-gray-100 "
               >
                 <li>
-                  <Link>Profile</Link>
+                  <Link>{user?.displayName}</Link>
                 </li>
                 <li>
-                  <Link>Logout</Link>
+                  <Link onClick={handleLogout}>Logout</Link>
                 </li>
               </ul>
             </div>

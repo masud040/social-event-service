@@ -8,14 +8,16 @@ import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 const Register = () => {
-  const { register, loginWithSocial } = useContext(AuthContext);
+  const { register, loginWithSocial, setName } = useContext(AuthContext);
   const [show, setShow] = useState(false);
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e?.target);
+    const name = form.get("name");
     const email = form.get("email");
     const password = form.get("password");
-
+    const photo =
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60";
     if (!/^(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{6,}$/.test(password)) {
       return toast.error(
         "Password must have 6 characters and one capital letter and one special character"
@@ -23,7 +25,9 @@ const Register = () => {
     }
     register(email, password)
       .then(() => {
-        toast.success("Register Success!");
+        setName(name, photo)
+          .then(() => toast.success("Register Success!"))
+          .catch((err) => toast.error(err.message));
         e.target.reset();
       })
       .catch((err) => toast.error(err.message));
