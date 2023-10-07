@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 
 const Member = ({ member }) => {
-  console.log(member);
   const { image, name, position } = member || {};
   return (
     <div className="text-center text-xl">

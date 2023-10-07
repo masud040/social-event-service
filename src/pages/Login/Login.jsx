@@ -154,7 +154,7 @@ const Login = () => {
           <span>
             <FaGoogle className="text-2xl" />
           </span>
-          <p className="font-semibold">Login With Facebook</p>
+          <p className="font-semibold">Login With Google</p>
         </Link>
       </div>
       <div className="bg-gradient-to-r w-full  rounded-3xl my-1 from-[#3c4fdf] via-[#6354e6] to-[#985cf0] p-[1px] mt-5">
