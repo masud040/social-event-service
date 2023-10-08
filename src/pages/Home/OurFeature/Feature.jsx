@@ -1,7 +1,12 @@
 const Feature = () => {
   return (
     <div className="my-8">
-      <h1 className="uppercase text-2xl text-center font-semibold  bg-gradient-to-r from-violet-600 via-pink-500 to-indigo-400 text-transparent bg-clip-text my-6 ">
+      <h1
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        className="uppercase text-2xl text-center font-semibold  bg-gradient-to-r from-violet-600 via-pink-500 to-indigo-400 text-transparent bg-clip-text my-6 "
+      >
         Why Choose to book Event services with{" "}
         <span className="text-green-700">us?</span>
       </h1>
