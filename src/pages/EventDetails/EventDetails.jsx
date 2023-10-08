@@ -16,19 +16,10 @@ const EventDetails = () => {
   return (
     <div className="min-h-[85vh] text-gray-600  my-8">
       <div className=" grid md:grid-cols-2 gap-5 items-center ">
-        <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          className="bg-gradient-to-r from-fuchsia-500 rounded-md p-[2px] via-red-500 to-indigo-500 lg:w-96 mx-auto "
-        >
+        <div className="bg-gradient-to-r from-fuchsia-500 rounded-md p-[2px] via-red-500 to-indigo-500 lg:w-96 mx-auto ">
           <img src={image} className="rounded-md   lg:w-96 mx-auto" alt="" />
         </div>
-        <div
-          data-aos="fade-left"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-        >
+        <div>
           <div className=" space-y-1 w-96 md:w-full mx-auto">
             <p className="text-2xl font-semibold">
               {" "}
@@ -63,7 +54,7 @@ const EventDetails = () => {
           </div>
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="3000" className="mt-6">
+      <div className="mt-6">
         <p className="text-sm text-justify">{description}</p>
       </div>
     </div>

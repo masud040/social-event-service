@@ -29,7 +29,7 @@ const Register = () => {
         setName(name, photo)
           .then(() => {
             toast.success("Register Success!");
-            navigate("/login");
+            navigate("/");
           })
           .catch((err) => toast.error(err.message));
         e.target.reset();

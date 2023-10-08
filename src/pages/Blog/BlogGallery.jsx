@@ -14,7 +14,11 @@ const BlogGallery = () => {
       </h1>
       <div className="grid  md:grid-cols-3 gap-6 ">
         {images?.map((img) => (
-          <div key={img.id} className="bg-[#150f2d] w-max  rounded-xl mx-auto">
+          <div
+            data-aos="flip-up"
+            key={img.id}
+            className="bg-[#150f2d] w-max  rounded-xl mx-auto"
+          >
             <img
               src={img?.image}
               className=" w-52 lg:w-72 h-52 lg:h-72 rounded-t-lg mx-auto"

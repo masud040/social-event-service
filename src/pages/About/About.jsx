@@ -17,12 +17,7 @@ const About = () => {
           </h1>
         </div>
       </div>
-      <div
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-        className="my-6 text-gray-600"
-      >
+      <div className="my-6 text-gray-600">
         <h1 className="uppercase text-4xl my-4 text-center font-semibold">
           Meet our Company
         </h1>
@@ -38,11 +33,7 @@ const About = () => {
           for every client that chooses to engage with us.
         </p>
       </div>
-      <div
-        data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-      >
+      <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         <h1 className="text-center text-3xl font-semibold my-8">OUR TEAM</h1>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {temMembers?.map((member) => (

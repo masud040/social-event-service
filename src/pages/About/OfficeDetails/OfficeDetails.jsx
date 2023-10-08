@@ -8,12 +8,7 @@ AOS.init();
 
 const OfficeDetails = () => {
   return (
-    <div
-      data-aos="fade-right"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine"
-      className="my-8"
-    >
+    <div className="my-8">
       <h1 className="uppercase text-2xl my-4 text-center font-semibold">
         our office info
       </h1>

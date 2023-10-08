@@ -5,7 +5,7 @@ const BlogContent = () => {
     <div className="mb-6">
       <h1 className="text-3xl text-center font-semibold mb-6">Event Planing</h1>
       <div className="grid md:grid-cols-3 gap-5 justify-center ">
-        <div className="bg-gray-400 p-5 md:p-3 rounded-lg">
+        <div data-aos="zoom-in" className="bg-gray-400 p-5 md:p-3 rounded-lg">
           <p className="text-5xl p-6 rounded-md bg-gray-500  ">
             <MdTipsAndUpdates className="w-full mx-auto" />
           </p>
@@ -20,7 +20,7 @@ const BlogContent = () => {
             their events successful.
           </p>
         </div>
-        <div className="bg-gray-400 p-5 md:p-3 rounded-lg">
+        <div data-aos="zoom-out" className="bg-gray-400 p-5 md:p-3 rounded-lg">
           <p className="text-5xl p-6 rounded-md bg-gray-500  ">
             <AiOutlineSolution className="w-full mx-auto" />
           </p>
@@ -33,7 +33,10 @@ const BlogContent = () => {
             pitfalls and be better prepared for their events.
           </p>
         </div>
-        <div className="bg-gray-400 p-5 md:p-3 rounded-lg">
+        <div
+          data-aos="zoom-out-up"
+          className="bg-gray-400 p-5 md:p-3 rounded-lg"
+        >
           <p className="text-5xl p-6 rounded-md bg-gray-500  ">
             <MdChecklist className="w-full mx-auto" />
           </p>
