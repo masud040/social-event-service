@@ -16,63 +16,61 @@ const Navbar = () => {
   };
   const navLinks = (
     <>
-      <li className="p-1">
-        <NavLink
-          to="/"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? ""
-              : isActive
-              ? "flex items-center text-gray-700 font-semibold transition-all  bg-rose-300 rounded-md px-2 py-1 "
-              : ""
-          }
-        >
-          Home
-        </NavLink>
-      </li>
+      <NavLink
+        to="/"
+        className={({ isActive, isPending }) =>
+          isPending
+            ? ""
+            : isActive
+            ? "flex items-center text-gray-700 font-semibold transition-all  bg-rose-300 rounded-md px-2 py-1 "
+            : ""
+        }
+      >
+        Home
+      </NavLink>
 
-      <li className="p-1">
-        <NavLink
-          to="/about"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? ""
-              : isActive
-              ? "flex transition-all items-center text-gray-700 font-semibold bg-rose-300 rounded-md px-2 py-1"
-              : ""
-          }
-        >
-          About
-        </NavLink>
-      </li>
-      <li className="p-1">
-        <NavLink
-          to="/contact"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? ""
-              : isActive
-              ? "flex transition-all items-center bg-rose-300 rounded-md px-2 py-1 text-gray-700 font-semibold"
-              : ""
-          }
-        >
-          Contact Us
-        </NavLink>
-      </li>
-      <li className="p-1  ">
-        <NavLink
-          to="/blog"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? ""
-              : isActive
-              ? "flex items-center text-gray-700 font-semibold transition-all bg-rose-300 rounded-md px-2 py-1 "
-              : ""
-          }
-        >
-          Blog
-        </NavLink>
-      </li>
+      {user && (
+        <>
+          <NavLink
+            to="/about"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? ""
+                : isActive
+                ? "flex transition-all items-center text-gray-700 font-semibold bg-rose-300 rounded-md px-2 py-1"
+                : ""
+            }
+          >
+            About
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? ""
+                : isActive
+                ? "flex transition-all items-center bg-rose-300 rounded-md px-2 py-1 text-gray-700 font-semibold"
+                : ""
+            }
+          >
+            Contact Us
+          </NavLink>
+        </>
+      )}
+
+      <NavLink
+        to="/blog"
+        className={({ isActive, isPending }) =>
+          isPending
+            ? ""
+            : isActive
+            ? "flex items-center text-gray-700 font-semibold transition-all bg-rose-300 rounded-md px-2 py-1 "
+            : ""
+        }
+      >
+        Blog
+      </NavLink>
     </>
   );
   return (
@@ -91,7 +89,12 @@ const Navbar = () => {
               {show ? <AiOutlineClose /> : <AiOutlineMenu />}
             </span>
           </button>
-          <ul className="hidden items-center gap-6 md:flex">{navLinks}</ul>
+          <ul className="hidden items-center gap-6 md:flex">
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-green-700 bg-clip-text text-transparent mr-6">
+              Social Event
+            </h1>
+            {navLinks}
+          </ul>
           {user ? (
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/74TJh6n/weedingG.jpg",
+    "event_date": "2023-09-27",
+    "event_name": "Wedding"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/VC537T7/birthday.jpg",
+    "event_date": "2023-10-02",
+    "event_name": "Birthday"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/yXBGPXx/aniversary.jpg",
+    "event_date": "2023-10-03",
+    "event_name": "Anniversaries"
+  }
+]
